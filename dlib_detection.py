@@ -9,9 +9,9 @@ import imageio
 
 TRAINING = False
 DETECTING = True
-# set options for SVM training model
 
 if TRAINING == True :
+	#set options for SVM training
 	options = dlib.simple_object_detector_training_options()
 
 	options.add_left_right_image_flips = True
@@ -19,12 +19,13 @@ if TRAINING == True :
 	options.num_threads = 4
 	options.be_verbose = True
 
+	# training SVM model with trainging data in dataset.xml with parameter options and save model in detector.svm
 	dlib.train_simple_object_detector("dataset.xml","detector.svm", options)
 
 	print("Training accuracy: {}".format(dlib.test_simple_object_detector("dataset.xml","detector.svm")))
 
 if DETECTING == True :
-
+	# set trained SVM model for HOG detetor 
 	detector = dlib.simple_object_detector("detector.svm")
 
 	#win_det = dlib.image_window()
@@ -45,6 +46,7 @@ if DETECTING == True :
 		#dlib.hit_enter_to_continue()
 	'''
 
+	# input video
 	cam = cv2.VideoCapture("video2.mp4")
 	#cam = cv2.VideoCapture(0)
 	#fourcc = cv2.VideoWriter_fourcc(*'XVID')
@@ -53,11 +55,16 @@ if DETECTING == True :
 	#fourcc = cv2.cv.CV_FOURCC(*'XVID')
 	#out = cv2.VideoWriter("output.avi",fourcc,20.0,(640,480))
 
+	#output video
 	writer = imageio.get_writer("out2.mp4")
 
 
 	while(cam.isOpened()):
 		ret,frame = cam.read()
+		
+		#using detector to detect human in frame
+		#this function return a location of rectangle which contain human detected 
+		#                     and its ordinal number
 		dets = detector(frame)
 		#frame = cv2.flip(frame,0)
 
@@ -65,6 +72,9 @@ if DETECTING == True :
 		for k, d in enumerate(dets):
 		#	print("detection {}: LEFT: {} TOP: {} RIGHT: {} BOTTOM:{} ".format(k, d.left(), d.top(), d.right(),d.bottom()))
 			cv2.rectangle(frame, (d.left(), d.top()),(d.right(),d.bottom()), (255,0,255),2)
+			# k is ordinal number of rectangle
+			# d is the rectangle 
+
 		#cv2.imshow("result",frame)
 		#cv2.waitKey(20)
 		##win.clear_overlay()
