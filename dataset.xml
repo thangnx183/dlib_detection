@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>imglab dataset</name>
+<comment>Created by imglab tool.</comment>
+<images>
+  <image file='data_for_dlib/1.jpg'>
+    <box top='277' left='425' width='105' height='322'/>
+  </image>
+  <image file='data_for_dlib/10.jpg'>
+    <box top='353' left='455' width='154' height='370'/>
+  </image>
+  <image file='data_for_dlib/11.jpg'>
+    <box top='356' left='460' width='153' height='368'/>
+  </image>
+  <image file='data_for_dlib/12.jpg'>
+    <box top='316' left='396' width='152' height='378'/>
+    <box top='79' left='506' width='55' height='144'/>
+  </image>
+  <image file='data_for_dlib/13.jpg'>
+    <box top='77' left='504' width='60' height='150'/>
+    <box top='320' left='394' width='151' height='374'/>
+  </image>
+  <image file='data_for_dlib/15.jpg'>
+    <box top='130' left='493' width='92' height='216'/>
+    <box top='268' left='383' width='128' height='281'/>
+  </image>
+  <image file='data_for_dlib/16.jpg'>
+    <box top='174' left='491' width='87' height='252'/>
+    <box top='209' left='421' width='91' height='285'/>
+  </image>
+  <image file='data_for_dlib/17.jpg'>
+    <box top='193' left='457' width='113' height='226'/>
+    <box top='368' left='445' width='197' height='363'/>
+  </image>
+  <image file='data_for_dlib/18.jpg'>
+    <box top='118' left='467' width='70' height='191'/>
+  </image>
+  <image file='data_for_dlib/19.jpg'>
+    <box top='59' left='503' width='46' height='127'/>
+  </image>
+  <image file='data_for_dlib/2.jpg'>
+    <box top='260' left='432' width='94' height='319'/>
+  </image>
+  <image file='data_for_dlib/20.jpg'>
+    <box top='143' left='504' width='79' height='211'/>
+  </image>
+  <image file='data_for_dlib/21.jpg'>
+    <box top='304' left='362' width='134' height='315'/>
+  </image>
+  <image file='data_for_dlib/22.jpg'>
+    <box top='188' left='418' width='88' height='225'/>
+  </image>
+  <image file='data_for_dlib/23.jpg'>
+    <box top='100' left='469' width='64' height='145'/>
+  </image>
+  <image file='data_for_dlib/24.jpg'>
+    <box top='7' left='486' width='34' height='69'/>
+  </image>
+  <image file='data_for_dlib/25.jpg'>
+    <box top='17' left='508' width='36' height='106'/>
+  </image>
+  <image file='data_for_dlib/26.jpg'>
+    <box top='40' left='512' width='45' height='131'/>
+  </image>
+  <image file='data_for_dlib/27.jpg'>
+    <box top='116' left='494' width='60' height='213'/>
+  </image>
+  <image file='data_for_dlib/28.jpg'>
+    <box top='269' left='463' width='108' height='369'/>
+  </image>
+  <image file='data_for_dlib/29.jpg'>
+    <box top='48' left='490' width='51' height='126'/>
+  </image>
+  <image file='data_for_dlib/3.jpg'>
+    <box top='212' left='456' width='99' height='275'/>
+  </image>
+  <image file='data_for_dlib/5.jpg'>
+    <box top='216' left='458' width='103' height='284'/>
+  </image>
+  <image file='data_for_dlib/8.jpg'>
+  </image>
+  <image file='data_for_dlib/9.jpg'>
+    <box top='342' left='456' width='140' height='334'/>
+  </image>
+</images>
+</dataset>
